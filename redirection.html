@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect?</title>
+    <link rel="stylesheet" href="redirection.css">
+</head>
+<body>
+    <h1 id="header" class="header">Are you sure you want to visit an external web?</h1>
+    <br>
+    <div id="btns">
+        <button id="yes-btn" onclick="window.location.href = 'https://alon50ff.github.io/alon50ff-web'">Yes</button>
+        <button id="no-btn" onclick="stay()">No</button>
+    </div>
+    <script>
+        function stay() {
+            //removes buttons
+            btns = document.getElementById('btns');
+            btnparent = btns.parentNode;
+            btnparent.removeChild(btns);
+            //removes header
+            h1 = document.getElementById('header');
+            h1parent = h1.parentNode;
+            h1parent.removeChild(h1);
+
+            console.log('Removed!');
+
+            //calls index and writes the list
+            index();
+        }
+
+        function index() {
+            document.write(
+                '<body style="background-color: #fffcf0">',
+                    '<h1 style="font-family: monospace;" id="header">Webpage Index:</h1>',
+                    '<ul style="font-family: monospace;">',
+                        '<li><a href="index.html#introduction">Introduction</a></li>',
+                        '<li><a href="index.html#hobbies">Hobbies</a></li>',
+                        '<li><a href="index.html#links">Cool links</a></li>',
+                        '<li><a href="index.html#video">Video</a></li>',
+                        '<li><a href="index.html#song">Song</a></li>',
+                    '</ul>',
+                '</body>',
+            );
+        }
+    </script>
+</body>
+</html>

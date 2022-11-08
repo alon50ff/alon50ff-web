@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    background-color: #fffcf0;
+}
+
+.social {
+    text-align: center;
+}
+
+.gitlab {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #e8e8e7;
+    background-color: white;
+}
+
+.profile {
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+
+.hobby {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h2 {
+    color: #272343;
+    text-align: center;
+    font-family: 'Roboto Mono';
+}
+
+em {
+    background-color: #ffd803;
+}
+
+p {
+    text-align: center;
+    font-family: 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    text-align: center;
+    font-size: 18px;
+    font-family:  'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type: none;
+    transform: translateX(-18px);
+}
+
+hr {
+    width: 80%;
+}
+
+.links {
+    color: black;
+}
+
+.video {
+    text-align: center;
+}
+
+.song {
+    text-align: center;
+}
